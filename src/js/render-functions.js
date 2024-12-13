@@ -23,9 +23,19 @@ export const createCard = ({
         </ul>
       </div>
     </div>
-  </li>`
+  </li>`;
 };
 
 export const appendCards = (ulElem, cards) => {
   ulElem.insertAdjacentHTML('afterbegin', cards);
+};
+
+const loaderRef = document.querySelector('.loader');
+
+export function showLoader() {
+  loaderRef.style.display = 'block';
+}
+
+export function hideLoader() {
+  loaderRef.style.display = 'none';
 }
