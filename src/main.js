@@ -17,7 +17,6 @@ function handleSubmit(e) {
   e.preventDefault();
 
   if (!e.target.search.value.trim()) {
-    inputRef.style.borderColor = 'red';
     iziToast.show({
       title: 'Warning',
       message: 'Please fill the field!',
